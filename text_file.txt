@@ -1,0 +1,10 @@
+1. I made Enrollment_no in s_health table foreign key taking ref. from Enrollment_no in students table.
+   Though not added any constraint on delete or update but written the code for it in delete_student.php
+    query---->  ALTER TABLE `s_health` ADD CONSTRAINT `Foreign key` FOREIGN KEY (`Enrollment_no`) REFERENCES `students`(`Enrollment_no`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+//problems
+1. Pass_hash not working for student sign up and login
+2.<form action="/shms/admin_dashboard.php?enroll_no=<?php echo $Enroll_no; ?>" method="post">
+                    <input type="submit" name="back" value="back">
+                    
+     </form>
