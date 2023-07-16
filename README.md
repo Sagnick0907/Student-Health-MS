@@ -65,3 +65,4 @@ and stores the information in our main database.
 
 
 ## Technologies Used
+- HTML, CSS, Bootstrap, PHP
